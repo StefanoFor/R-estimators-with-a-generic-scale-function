@@ -9,7 +9,7 @@ T = T/T(1,1);
 [score_vect,u,inv_sr_T] = score_rank_sign_t_nu(y,T,nu);
 
 % Evaluation of the matrix K_V in Eq. (17)
-inv_sr_T2 = kron(inv_sr_T,inv_sr_T);
+inv_sr_T2 = kron(inv_sr_T.',inv_sr_T);
 I_m = eye(m);
 J_m_per = eye(m^2) - I_m(:)*I_m(:).'/m;
 
