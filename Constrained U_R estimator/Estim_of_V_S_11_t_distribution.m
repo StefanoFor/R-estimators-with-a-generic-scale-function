@@ -181,7 +181,7 @@ grid on
 axis([2.1 20 0 2*max(Fro_MSE_Ty)])
 xlabel('Degrees of freedom: $\nu$','interpreter','latex');ylabel('Frobanius norm','interpreter','latex');
 legend('CRB on $\underline{\mathrm{vecs}}(\mathbf{V}_S)$','SCRB on $\underline{\mathrm{vecs}}(\mathbf{V}_S)$','Const. SCM','Const. Tyler','U-const. $R_{vdW}$','U-const. $R_{t_{\nu}$','interpreter','latex')
-title('Estimation of $\underline{\mathrm{vecs}}(\mathbf{V}_S)$ with $S(\mathbf{\Sigma})=[\mathbf{\Sigma})]_{11}$','interpreter','latex')
+title('Estimation of $\underline{\mathrm{vecs}}(\mathbf{V}_S)$ with $S(\mathbf{\Sigma})=[\mathbf{\Sigma}]_{11}$','interpreter','latex')
 
 figure(2)
 plot(nuvect,alpha_true,line_marker{1},'LineWidth',1,'Color',color_matrix(1,:),'MarkerEdgeColor',color_matrix(1,:),'MarkerFaceColor',color_matrix(1,:),'MarkerSize',8);
