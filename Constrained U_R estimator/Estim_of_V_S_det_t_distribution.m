@@ -180,4 +180,3 @@ xlabel('Degrees of freedom: $\nu$','interpreter','latex');ylabel('Frobanius norm
 legend('CRB on $\underline{\mathrm{vecs}}(\mathbf{V}_S)$','SCRB on $\underline{\mathrm{vecs}}(\mathbf{V}_S)$','Const. SCM','Const. Tyler','U-const. $R_{vdW}$','U-const. $R_{t_{\nu}$','interpreter','latex')
 title('Estimation of $\underline{\mathrm{vecs}}(\mathbf{V}_S)$ with $S(\mathbf{\Sigma})=|\mathbf{\Sigma}|^{1/m}$','interpreter','latex')
 
-save const_det_iter_3
