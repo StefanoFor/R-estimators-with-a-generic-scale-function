@@ -169,6 +169,6 @@ hold on
 semilogy(nuvect,Fro_MSE_R_t_nu,line_marker{6},'LineWidth',1,'Color',color_matrix(6,:),'MarkerEdgeColor',color_matrix(6,:),'MarkerFaceColor',color_matrix(6,:),'MarkerSize',8);
 grid on
 axis([2.1 20 0 2*max(Fro_MSE_Ty)])
-xlabel('Degrees of freedom: $\nu$','interpreter','latex');ylabel('Frobanius norm','interpreter','latex');
+xlabel('Degrees of freedom: $\nu$','interpreter','latex');ylabel('MSE and bounds','interpreter','latex');
 legend('CRB on $\mathrm{vec}(\mathbf{V}_S)$','SCRB on $\mathrm{vec}(\mathbf{V}_S)$','Const. SCM','Const. Tyler','U-const. $R_{vdW}$','U-const. $R_{t_{\nu}$','interpreter','latex')
 title('Estimation of $\mathrm{vec}(\mathbf{V}_S)$ with $S(\mathbf{\Sigma})=|\mathbf{\Sigma}|^{1/m}$','interpreter','latex')
