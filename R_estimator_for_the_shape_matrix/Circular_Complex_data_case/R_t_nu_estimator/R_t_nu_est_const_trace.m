@@ -38,6 +38,7 @@ N_VDW_vec = T(:) + (inv_Psi_T*Delta_T)/(alpha_est*sqrt(n));
 
 % One-step estimatimator of the shape matrix
 V_VDW = reshape(N_VDW_vec, [m,m]);
+V_VDW = (V_VDW+V_VDW')/2;
 
 
 end
