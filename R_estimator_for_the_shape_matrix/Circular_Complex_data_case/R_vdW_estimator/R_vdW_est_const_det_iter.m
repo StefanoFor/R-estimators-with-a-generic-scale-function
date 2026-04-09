@@ -38,4 +38,6 @@ for i = 1:iter
     T =  V_VDW/(det(V_VDW)^(1/m));
 end
 
+V_VDW = (V_VDW+V_VDW')/2;
+
 end
