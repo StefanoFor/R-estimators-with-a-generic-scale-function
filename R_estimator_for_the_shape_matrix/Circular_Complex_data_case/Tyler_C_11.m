@@ -21,3 +21,5 @@ while (iter<MAX_ITER)
    invC0 = inv(C);
    iter = iter+1;  
 end 
+
+C = (C+C')/2;
