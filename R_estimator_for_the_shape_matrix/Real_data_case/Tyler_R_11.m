@@ -21,3 +21,4 @@ while (iter<MAX_ITER)
       invC0 = C\eye(N);
       iter = iter+1;     
 end 
+C = (C+C')/2;
