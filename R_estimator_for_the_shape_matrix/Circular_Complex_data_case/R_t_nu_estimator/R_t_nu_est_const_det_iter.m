@@ -20,11 +20,11 @@ function [ V_VDW,  alpha_est] = R_t_nu_est_const_det_iter( y, T, nu, pert, iter)
 
 [m, n] = size(y);
 
-% Estimation of alpha
-alpha_est= alpha_estimator_sub_t_nu_const( y, T, nu, pert);
-
-
 for i = 1:iter
+
+    % Estimation of alpha
+    alpha_est= alpha_estimator_sub_t_nu_const( y, T, nu, pert);
+      
     % Calculation of the Constraint Matrix U_V for the constraint S(Sigma) = det(Sigma)^(1/m)
     D_Sigma = m^(-1)*(det(T)^(1/m))*inv(T);
     U_V = null(D_Sigma(:)');
