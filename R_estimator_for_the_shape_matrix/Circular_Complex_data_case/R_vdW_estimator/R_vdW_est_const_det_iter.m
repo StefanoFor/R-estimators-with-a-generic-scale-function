@@ -19,10 +19,11 @@ function [ V_VDW,  alpha_est] = R_vdW_est_const_det_iter( y, T, pert, iter)
 
 [m, n] = size(y);
 
-% Estimation of alpha
-alpha_est= alpha_estimator_sub_vdW_const( y, T, pert);
-
 for i = 1:iter
+
+    % Estimation of alpha
+    alpha_est= alpha_estimator_sub_vdW_const( y, T, pert);
+  
     % Calculation of the Constraint Matrix U_V for the constraint S(Sigma) = det(Sigma)^(1/m)
     D_Sigma = m^(-1)*(det(T)^(1/m))*inv(T);
     U_V = null(D_Sigma(:)');
